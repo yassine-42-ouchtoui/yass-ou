@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice </title>
+</head>
+
+<body>
+    <script>
+        let a = parseFloat(prompt("Entrez le premier nombre :"));
+        let b = parseFloat(prompt("Entrez le deuxième nombre :"));
+
+        let s = a + b;
+        let d = a - b;
+        let p = a * b;
+        let q = a / b;
+
+        console.log("Somme :", s);
+        console.log("Différence :", d);
+        console.log("Produit :", p);
+
+        if (b !== 0) {
+            console.log("Quotient :", q);
+        } else {
+            console.log("Quotient : Division par zéro impossible");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz tp</title>
+</head>
+
+<body>
+    <h1><b>Quiz Interactif</b></h1>
+    <button onclick="lancerQuiz()">Démarrer le Quiz</button>
+
+    <script>
+        const QUESTIONS = [
+            ["Quelle est la capitale de la France ?", "Paris"],
+            ["Combien de chompions league a gagne real madride  ?", "15"],
+            ["comment déclarer une variable avec une portée de fonction ou globale.", "var"],
+            ["comment déclarer une variable avec une portée limitée au bloc.?", "let"],
+            ["comment déclarer une variable dont la valeur ne peut pas être modifiée ? ", "const "],
+            ["Quel est le resultat de 1 + 1 ? ", "2"],
+        ];
+
+        function lancerQuiz() {
+            let score = 0;
+
+            for (let i = 0; i < QUESTIONS.length; i++) {
+                let question = QUESTIONS[i][0];
+                let reponsecorrecte = QUESTIONS[i][1].toLowerCase();
+
+                let reponsedonner = prompt(question);
+
+                if (reponsedonner && reponsedonner.trim().toLowerCase() === reponsecorrecte) {
+                    alert("Réponse juste");
+                    score++;
+                } else {
+                    alert("Réponse fausse");
+                }
+            }
+
+            alert("Vous avez répondu correctement à " + score + " question sur " + QUESTIONS.length + ".");
+        }
+    </script>
+</body>
+
+</html>
