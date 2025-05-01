@@ -1,0 +1,75 @@
+
+td  {
+    border:1px solid ;
+    border-right:4px solid ;
+    height: 70px;
+    font-size: 15px;
+}
+table{
+    width: 100%;
+}
+.etud{
+    background-color: #fcd5b4;
+     color: black;
+     text-align: center;
+}
+.rot{
+    transform: rotate(90deg);
+    background-color:#e4eef8 ;
+    width: 70px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.formulaire{
+    
+    border: 2px solid black;
+    text-align: center;
+}
+.subject{
+    width: 100%;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+ textarea{
+    resize: none;
+    height: 100px;
+ }
+label {
+    display: block;
+    margin-top: 10px;
+}
+form{
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+.envoyer{
+    background-color: rgb(14, 50, 230);
+}
+
+
+
+.boxs{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #dadae533;
+}
+
+.chapitre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    background-color:  #f2ededb3;
+    margin: 10px;
+}
