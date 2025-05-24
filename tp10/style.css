@@ -1,0 +1,19 @@
+ body {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-color: rgb(229, 231, 220);
+ }
+ 
+ form {
+     background-color: rgb(236, 193, 136);
+     flex-direction: column;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 300px;
+     width: 300px;
+     border-radius: 10%;
+ }
